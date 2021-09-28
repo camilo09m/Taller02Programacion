@@ -57,14 +57,24 @@ public class Main {
 
     public static int mayorProductoAdyacentes(int[] arr) {
         int mayorProducto = 0;
-        for (int i = 1; i < arr.length; i++) {
-            int producto = arr[i-1]*arr[i];
-            if (producto>mayorProducto){
-                mayorProducto = producto;
+        if (validarInput(arr)){
+            for (int i = 1; i < arr.length; i++) {
+                int producto = arr[i-1]*arr[i];
+                if (producto>mayorProducto){
+                    mayorProducto = producto;
+                }
             }
+        }else{
+            System.out.println("El array debe contener pares");
+
         }
 
+
         return mayorProducto;
+    }
+
+    public static boolean validarInput(int[] arr){
+        return arr.length > 1;
     }
 
 }

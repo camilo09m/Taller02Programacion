@@ -8,7 +8,14 @@ public class MainTest {
     @Test
     public void testMayorProducto(){
         int[] arreglo = {1};
-        Main.mayorProductoAdyacentes(arreglo);
+        int resultado = Main.mayorProductoAdyacentes(arreglo);
+        assertEquals(0,resultado);
+    }
+
+    @Test
+    public void testMayorProducto2(){
+        String arreglo = "a";
+
     }
     @Test
     public void testMayorProducto4(){
