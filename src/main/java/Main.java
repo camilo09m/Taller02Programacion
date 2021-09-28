@@ -1,18 +1,23 @@
 import java.io.IOException;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
     }
-   /* public static int[] generarArreglo(int n){
-        try {
+   public static void generarArreglo(int n){
             int[] arrAdyacente = new int[n];
-        }catch(Exception e){
-            System.err.println("No se a ingresado largo");
 
-        }
-    }*/
+    }
+
+    public static int genaradorRandom(int max, int min){
+        Random rand = new Random();
+        int numRandom = (int)(Math.random()*(max-min+1)+min);
+        return numRandom;
+    }
+
+
     public static void mostrarMenu() {
         System.out.println("--------------------------------------------------");               //muestra las opciones posibles
         System.out.println("Ingrese una opción:");
