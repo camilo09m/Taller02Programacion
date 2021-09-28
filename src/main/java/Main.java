@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        generarArreglo(-1);
     }
    public static int[] generarArreglo(int n){
             int[] arrAdyacente = new int[n];
