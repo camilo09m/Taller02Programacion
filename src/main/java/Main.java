@@ -1,10 +1,9 @@
-import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        generarArreglo(-1);
     }
    public static int[] generarArreglo(int n){
             int[] arrAdyacente = new int[n];
@@ -29,7 +28,7 @@ public class Main {
         System.out.println("[0] Salir");
         System.out.println("--------------------------------------------------");
     }
-    public static void opcionMenu() {                                                         //se crea un arreglo vacio
+    public static void opcionMenu() {
         Scanner tecla = new Scanner(System.in);
         int aux = 0;
         while (aux == 0) {
