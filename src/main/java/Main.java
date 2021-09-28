@@ -3,8 +3,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+ feature/MatíasPincheira
+ feature/CamiloÑanco
+
+
         int n = genaradorRandom(10,2);
         opcionMenu(generarArreglo(n));
+ master
     }
    public static int[] generarArreglo(int n){
             int[] arrAdyacente = new int[n];                            //creamos un arreglo el cual almacenará los valores a considerar
@@ -48,6 +53,8 @@ public class Main {
             }
         }
     }
+ feature/MatíasPincheira
+ feature/CamiloÑanco
     public static void mostrarParesAdyacentes(int[] arr){                   //en este metodo se recorrerá por todo el largo del arreglo y se irá mostrando su par ordenado, de forma que el sucesor será su par
         for (int i = 1; i < arr.length; i++) {
             System.out.printf("["+ arr[i-1] +" , "+ (arr[i])+"]; ");
@@ -65,4 +72,12 @@ public class Main {
         }
         return mayorProducto;
     }
+       
+ feature/MatíasPincheira
+
+    public static boolean validarInput(int[] arr){
+        return arr.length > 1;
+    }
+ feature/MatíasPincheira
+ master
 }
