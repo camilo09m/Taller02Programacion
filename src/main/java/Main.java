@@ -6,9 +6,12 @@ public class Main {
     public static void main(String[] args) {
 
     }
-   public static void generarArreglo(int n){
+   public static int[] generarArreglo(int n){
             int[] arrAdyacente = new int[n];
-
+            for (int i = 0; i<arrAdyacente.length;i++){
+                arrAdyacente[i]=genaradorRandom(-1000,1000);
+            }
+            return arrAdyacente;
     }
 
     public static int genaradorRandom(int max, int min){
