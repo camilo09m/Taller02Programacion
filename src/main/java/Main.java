@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        mostrarParesAdyacentes(generarArreglo(10));
     }
    public static int[] generarArreglo(int n){
             int[] arrAdyacente = new int[n];
@@ -45,5 +46,12 @@ public class Main {
                     System.err.println("opcion ingresada no valida");
             }
         }
+    }
+
+    public static void mostrarParesAdyacentes(int[] arr){
+        for (int i = 1; i < arr.length; i++) {
+            System.out.print("["+ arr[i-1] +" , "+ (arr[i])+"]; ");
+        }
+
     }
 }
