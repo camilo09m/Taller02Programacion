@@ -1,0 +1,85 @@
+INTEGRANTES: Camilo Ñando - Matias Pincheira
+
+
+
+Se considera un arreglo de número enteros y es necesario que su programa permita:
+- contar la cantidad de pares de números adyacentes.
+- mostrar los pares de números adyacentes en el arreglo.
+- calcular el producto mayor de los pares de números adyacentes que tengan el producto más grande.
+
+El arreglo de enteros lo debe generar de forma aleatoria, considerando las siguientes restricciones:
+
+2 ≤ arreglo.length ≤ 10
+-1000 ≤ arreglo[i] ≤ 1000
+Por ejemplo para el arreglo A= {1, -4, 2, 2, 5, -1}
+
+- los pares adyacentes son: (1,-4) , (-4,2) , (2,2) , (2,5) , (5,-1)
+
+- el mayor producto de números adyacentes es el de los números 2 y 5, que entregan como valor 10.
+
+
+
+2.2 Para solucionar este problema se considera cómo mínimo los siguientes métodos:
+
+int [] generarArreglo(...) {...}. // se debe invocar al momento de iniciar el programa.
+
+void mostrarParesAdyacentes (...) {...}
+
+int mayorProductoAdyacentes(...) { ... }
+
+Considere además un menú de usuario que implemente 4 opciones:
+
+1. Mostrar pares adyacentes // muestra los pares adyacentes identificados
+
+2. Mostrar el mayor valor de producto // muestra el mayor valor de los productos de pares adyacentes
+
+3. Salir
+
+El menú debe considerar las validaciones correspondientes.
+
+2.3 Diseñar e implementar los siguientes casos de pruebas para el método int mayorProductoAdyacentes(...), considerando que un input “ideal” tiene las siguientes propiedades:
+
+2 ≤ arreglo.length ≤ 10
+-1000 ≤ arreglo[i] ≤ 1000.
+Caso de prueba 1:
+
+Input: arreglo = [1];
+
+Output: ???
+
+Considere el manejo de excepciones, eso se podría cambiar y devolver un output definido.
+
+Caso de prueba 2:
+
+Input: arreglo = [];
+
+Output: 0 ...??
+
+Acotación, el output podría retornar 0, si así se inicializó la variable, pero con manejo de excepciones eso se podría cambiar y devolver otro output.
+
+Caso de prueba 3:
+
+Input: ‘a’
+
+Output: error: incompatible types: char cannot be converted to int[]
+
+Lo mismo se puede repetir con otros tipos de datos que se le dé a la función, por ejemplo, booleanos, string, números, etc.
+
+Caso de prueba 4:
+
+Input: [3, 6, -2, -5, 7, 3]
+
+Output: 21
+
+Caso de prueba 5:
+
+Input: [-1, -2]
+
+Output: 2
+
+Caso de prueba 6:
+
+Input: [1, 0, 1, 0, 1000]
+
+Output: 0
+
